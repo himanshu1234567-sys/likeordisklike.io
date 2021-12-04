@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>click on button increase num or decrease</h1>
+    <!-- <div id="count">0</div>
+    <div class="btn"> <button id="get_like">Like</button>
+        <button id="get_dislike">Dislike</button>
+    </div> -->
+
+    <div id="count">0</div>
+    <div class="btn">
+        <button id="like">Like</button>
+        <button id="dislike">Dislike</button>
+    </div>
+
+    <script>
+        // let cn = document.getElementById('count');
+        // let add = document.getElementById('get_like.');
+        // let dec = document.getElementById('get_dislike');
+        // let count = 0;
+        // add.addEventListener('click', () => {
+        //     count++;
+        //     cn.innerHTML = count;
+        // })
+        // sub.addEventListener('click', () => {
+        //     count--;
+        //     cn.innerHTML = count;
+        // })
+        let text = document.getElementById('count');
+        let add = document.getElementById('like');
+        let sub = document.getElementById('dislike');
+
+        let count = 0;
+        add.addEventListener('click', () => {
+            count++;
+            text.innerHTML = count;
+        })
+
+        sub.addEventListener('click', () => {
+            count--;
+            text.innerHTML = count;
+        })
+    </script>
+</body>
+
+</html>
